@@ -6,9 +6,9 @@ class Solution(object):
         for i in range(0,n):
             if nums[i]==1:
                 count+=1
-                max_count=max(max_count,count)
-            else:
                 
+            else:
+                max_count=max(max_count,count)
                 count=0
-        return max_count
+        return max(max_count,count)
         
